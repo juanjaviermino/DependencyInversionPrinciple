@@ -6,6 +6,8 @@ class PaymentProcessor {
     }
 
     public void makePayment(double amount) {
+        System.out.println("Iniciando pago..");
         paymentMethod.processPayment(amount);
+        System.out.println("Pago completado con éxito");
     }
 }
